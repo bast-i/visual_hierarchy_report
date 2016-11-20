@@ -22,7 +22,32 @@
                     {
                         Name: "Illinois", Area: 57914, Population: 12882135, TimeZone: "Central Time Zone",
                         children: [
-                            { Name: "Chicago", Area: 234, Population: 2695598, TimeZone: "CST" }
+                            {
+                                Name: "Chicago", Area: 234, Population: 2695598, TimeZone: "CST",
+                                children: [
+                                    {
+                                        Name: "Chicago", Area: 234, Population: 2695598, TimeZone: "CST",
+                                        children: [
+                                            {
+                                                Name: "Chicago", Area: 234, Population: 2695598, TimeZone: "CST",
+                                                children: [
+                                                    {
+                                                        Name: "Chicago", Area: 234, Population: 2695598, TimeZone: "CST",
+                                                        children: [
+                                                            {
+                                                                Name: "Chicago", Area: 234, Population: 2695598, TimeZone: "CST",
+                                                                children: [
+                                                                    { Name: "Chicago", Area: 234, Population: 2695598, TimeZone: "CST" }
+                                                                ]
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
                         ]
                     }
                 ]
@@ -53,7 +78,8 @@
             {
                 field: "Population",
                 sortable: true,
-                sortingType: "number"
+                sortingType: "number",
+                filterable: true
             },
             {
                 field: "TimeZone",
